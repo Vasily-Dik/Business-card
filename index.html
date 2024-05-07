@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="../portfolio/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Vasya</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Проекты
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Обучение
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Резюме
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__img">
+                        <div class="home__blob">
+                            <img src="../portfolio/images/Portrait.png" alt="" class="home__blob-img">
+                        </div>
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Привет, я - Василий</h1>
+                        <h3 class="home__subtitle">FrontEnd разработчик</h3>
+                        <p class="home__description">Я - целеустремленный, самостоятельный и организованный веб-разработчик. Недавно я окончил Академию TOP, где получил глубокие знания и практические навыки в области веб-разработки в области FrontEnd, BackEnd, UX и дизайна.</p>
+                        <a href="#contact" class="button button--flex">
+                            Контакты
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects section">
+            <div class="container grid">
+                <div id="cbp-fwslider" class="cbp-fwslider">
+                    <ul>
+                        <li><div><img src="images/project 1.png" alt="img01"/></div></li>
+                        <li><a href="#"><img src="images/project 2.png" alt="img02"/></a></li>
+                        <li><a href="#"><img src="images/Project 3.png" alt="img03"/></a></li>
+                    </ul>
+                </div>
+                <h1 class="home__title">Проекты</h1>
+                <p class="home__description">Я выполнил несколько проектов в основном на JavaScript и PhP. Первый - это игра в кости с двумя игроками и сменой хода между ними. Второй это одностраничный лендинг банковской организации с анимациями и всплывающими окнами. Один из последних проектов это организатор задач который способен отслеживать и сортировать задачи по выполнению и времени</p>
+            </div>
+        </section>
+        <section class="education section">
+            <div class="container grid">
+                <h1 class="home__title">Обучение</h1>
+                <p class="home__description">Я начал своё профессиональное обучение в институте ИТМО, где я использовал свои навыки программиования для управления механизмами. После этого я увлекся FrontEnd-ом и прошел практику в компании TargetFamily. Для получения серьезный знаний в этой сфере я прошел годовой курс от академии Top, после которого обрел более глубокое понимание и расширил свои знания в нескольких языках программирования таких как JavaScript, библиотеки React, PhP, языках разверстки HTML/CSS, получил опыт работы с базами данных MySQL.</p>
+            </div>
+        </section>
+        <section class="section contacts">
+            <div class="container grid">
+                <p>контакты</p>
+            </div>
+        </section>
+    </main>
+    <script src="../portfolio/js/index.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.cbpFWSlider.min.js"></script>
+		<script>
+			$( function() {
+                
+				$( '#cbp-fwslider' ).cbpFWSlider();
+
+			} );
+		</script>
+</body>
+</html>
